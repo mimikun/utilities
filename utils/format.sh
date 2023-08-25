@@ -9,6 +9,7 @@ run_shfmt() {
 }
 
 run_shfmt generate_cargo_package_list.sh
+run_shfmt generate_pip_package_list.sh
 run_shfmt git-ammend-commit.sh
 run_shfmt git-browse.sh
 run_shfmt git-hash.sh
@@ -16,6 +17,7 @@ run_shfmt git-ignore.sh
 run_shfmt install_asdf_plugins.sh
 run_shfmt install_cargo_packages.sh
 run_shfmt install_gh_extensions.sh
+run_shfmt install_pip_packages.sh
 run_shfmt update_pnpm.sh
 run_shfmt update_poetry.sh
 
