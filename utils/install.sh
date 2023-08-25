@@ -15,7 +15,7 @@ run_install() {
 
 before_sudo
 run_install generate_cargo_package_list
-run_install generate_pip_package_list.sh
+run_install generate_pip_package_list
 run_install git-ammend-commit
 run_install git-browse
 run_install git-hash
@@ -23,6 +23,6 @@ run_install git-ignore
 run_install install_asdf_plugins
 run_install install_cargo_packages
 run_install install_gh_extensions
-run_install install_pip_packages.sh
+run_install install_pip_packages
 run_install update_pnpm
 run_install update_poetry
