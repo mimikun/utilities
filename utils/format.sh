@@ -8,6 +8,8 @@ run_shfmt() {
     chmod +x ./"$1"
 }
 
+run_shfmt chezmoi_post_apply_hook.sh
+run_shfmt chezmoi_pre_apply_hook.sh
 run_shfmt generate_cargo_package_list.sh
 run_shfmt generate_pip_package_list.sh
 run_shfmt git-ammend-commit.sh

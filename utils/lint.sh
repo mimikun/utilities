@@ -4,6 +4,8 @@ run_lint() {
     shellcheck ./"$1"
 }
 
+run_lint chezmoi_post_apply_hook.sh
+run_lint chezmoi_pre_apply_hook.sh
 run_lint generate_cargo_package_list.sh
 run_lint generate_pip_package_list.sh
 run_lint git-ammend-commit.sh
