@@ -16,6 +16,7 @@ run_install() {
 before_sudo
 run_install chezmoi_post_apply_hook
 run_install chezmoi_pre_apply_hook
+run_install generate_asdf_plugin_list
 run_install generate_cargo_package_list
 run_install generate_pip_package_list
 run_install git-amend-commit

@@ -6,6 +6,7 @@ run_lint() {
 
 run_lint chezmoi_post_apply_hook.sh
 run_lint chezmoi_pre_apply_hook.sh
+run_lint generate_asdf_plugin_list.sh
 run_lint generate_cargo_package_list.sh
 run_lint generate_pip_package_list.sh
 run_lint git-amend-commit.sh
