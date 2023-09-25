@@ -17,6 +17,7 @@ run_shfmt git-amend-commit.sh
 run_shfmt git-browse.sh
 run_shfmt git-hash.sh
 run_shfmt git-ignore.sh
+run_shfmt git-shallow-clone.sh
 run_shfmt install_asdf_plugins.sh
 run_shfmt install_cargo_packages.sh
 run_shfmt install_gh_extensions.sh

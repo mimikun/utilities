@@ -23,6 +23,7 @@ run_install git-amend-commit
 run_install git-browse
 run_install git-hash
 run_install git-ignore
+run_install git-shallow-clone
 run_install install_asdf_plugins
 run_install install_cargo_packages
 run_install install_gh_extensions
