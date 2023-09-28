@@ -1,2 +1,4 @@
 *.patch
 fmt-*
+.textlintcache
+node_modules
