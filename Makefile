@@ -48,15 +48,11 @@ copy2win-patch-gpg :
 .PHONY : copy2win-patch
 copy2win-patch : copy2win-patch-raw
 
-.PHONY : lint
-lint :
-	bash utils/lint.sh
-
 .PHONY : test
 test : lint
 
 .PHONY : lint
-lint : textlint typo-check shell-lint
+lint : textlint typo-check shell-lint pwsh-test
 
 .PHONY : textlint
 textlint :
