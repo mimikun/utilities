@@ -1,7 +1,9 @@
 ﻿function Invoke-InstallCargoPackage {
     function Invoke-ExistsCmd() {
-        Get-Command -Name $1
-        return $?
+        Param($cmdName)
+        Get-Command -Name $cmdName > $null 2>&1
+        $result = $?
+        return $result
     }
 
     $pkglist = Join-Path -Path $env:USERPROFILE -ChildPath windows_cargo_packages.txt
@@ -9,7 +11,8 @@
     Get-Content -Path $pkglist |
     ForEach-Object {
         $pkg = $_
-        if ! Invoke-ExistsCmd $pkg {
+        $cond = Invoke-ExistsCmd $pkg
+        if (-not $cond) {
             Write-Output "$pkg is not found"
             cargo install $pkg
         }
