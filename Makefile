@@ -48,6 +48,11 @@ delete-branch : clean switch-master
 clean :
 	bash utils/clean.sh
 
+## Run install
+.PHONY : install
+install : clean
+	bash utils/install.sh
+
 ## Copy patch to Windows
 .PHONY : copy2win-patch-raw
 copy2win-patch-raw :
