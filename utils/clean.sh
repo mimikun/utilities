@@ -1,4 +1,8 @@
 #!/bin/bash
 
-rm -f *.patch
-rm -f *.patch.gpg
+# patch
+rm -f ./*.patch
+rm -f ./*.patch.gpg
+
+# zip file
+rm -f ./*.zip
