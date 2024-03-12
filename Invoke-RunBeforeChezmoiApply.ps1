@@ -2,7 +2,9 @@
 
 function Invoke-RunBeforeChezmoiApply() {
     Write-Output "pre-apply-hook"
-    # TODO: set $env:BW_SESSION
+
+    Write-Output "Set BW_SESSION env"
+    $env:BW_SESSION = (bw unlock --raw)
 }
 
 Invoke-RunBeforeChezmoiApply
