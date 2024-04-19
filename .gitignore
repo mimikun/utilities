@@ -1,4 +1,7 @@
+# Common to all platforms
+*.zip
 *.patch
+*.patch.gpg
 fmt-*
-.textlintcache
 node_modules
+.textlintcache
