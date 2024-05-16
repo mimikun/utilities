@@ -6,7 +6,8 @@
         return $result
     }
 
-    $pkglist = Join-Path -Path $env:USERPROFILE -ChildPath windows_cargo_packages.txt
+    $tmp = Join-Path -Path $env:USERPROFILE -ChildPath ".mimikun-pkglists"
+    $pkglist = Join-Path -Path $tmp -ChildPath "windows_cargo_packages.txt"
 
     Get-Content -Path $pkglist |
     ForEach-Object {
