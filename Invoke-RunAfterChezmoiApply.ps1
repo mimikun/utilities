@@ -25,9 +25,11 @@ function Invoke-RunAfterChezmoiApply() {
     # Copy nvim (neovim) configuration #
     ####################################
 
-    Write-Output "Copy nvim (neovim) configuration"
     $windows_nvim_config = Join-Path -Path $env:LOCALAPPDATA -ChildPath "nvim\"
     $linux_nvim_config = Join-Path -Path $env:CHEZMOI_DIR -ChildPath "dot_config\nvim\*"
+
+    Write-Output "Remove old nvim(neovim) configuration"
+    Remove-Item $windows_nvim_config
 
     # folder exist check
     if (-not (Test-Path -Path $windows_nvim_config)) {
@@ -35,6 +37,7 @@ function Invoke-RunAfterChezmoiApply() {
         New-Item -Path $windows_nvim_config -ItemType "directory" > $null
     }
 
+    Write-Output "Copy nvim (neovim) configuration"
     Copy-Item -Path $linux_nvim_config -Destination $windows_nvim_config -Recurse -Force
 
     #####################################
@@ -45,6 +48,9 @@ function Invoke-RunAfterChezmoiApply() {
     $windows_pvim_config = Join-Path -Path $env:USERPROFILE -ChildPath "vimfiles\"
     $home_pvim_config = Join-Path -Path $env:CHEZMOI_DIR -ChildPath "dot_config\vim\*"
     $work_pvim_config = Join-Path -Path $env:CHEZMOI_DIR -ChildPath "dot_vim\*"
+
+    Write-Output "Remove old vim(paleovim) configuration"
+    Remove-Item $windows_pvim_config
 
     # folder exist check
     if (-not (Test-Path -Path $windows_pvim_config)) {
