@@ -13,10 +13,13 @@ function Invoke-RunAfterChezmoiApply() {
     $work_pwsh_profile = Join-Path $env:USERPROFILE -ChildPath "Documents\PowerShell\Microsoft.PowerShell_profile.ps1"
     $work_powershell_profile = Join-Path $env:USERPROFILE -ChildPath "Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
 
-    Copy-Item -Path $base_profile -Destination $home_pwsh_profile
-    Copy-Item -Path $base_profile -Destination $home_powershell_profile
-    Copy-Item -Path $base_profile -Destination $work_pwsh_profile
-    Copy-Item -Path $base_profile -Destination $work_powershell_profile
+    if ($env:COMPUTERNAME -eq "TANAKAPC") {
+        Copy-Item -Path $base_profile -Destination $work_pwsh_profile
+        Copy-Item -Path $base_profile -Destination $work_powershell_profile
+    } else {
+        Copy-Item -Path $base_profile -Destination $home_pwsh_profile
+        Copy-Item -Path $base_profile -Destination $home_powershell_profile
+    }
 
     ####################################
     # Copy nvim (neovim) configuration #
