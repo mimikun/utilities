@@ -23,6 +23,7 @@ run_shfmt install_pip_packages.sh
 run_shfmt update_pnpm.sh
 
 cd utils || exit
+run_shfmt changelog.sh
 run_shfmt clean.sh
 run_shfmt create-patch.sh
 run_shfmt format.sh

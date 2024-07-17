@@ -109,6 +109,25 @@ format : shell-format
 shell-format :
 	bash utils/format.sh
 
+## Add commit message up to `origin/master` to CHANGELOG.md
+.PHONY : changelog
+changelog :
+	bash utils/changelog.sh
+
+## Run git cleanfetch
+.PHONY : clean-fetch
+clean-fetch :
+	git cleanfetch
+
+## Run git pull
+.PHONY : pull
+pull :
+	git pull
+
+## Run workday morning routine
+.PHONY : morning-routine
+morning-routine : clean-fetch delete-branch pull patch-branch
+
 ## Show help
 .PHONY : help
 help :
