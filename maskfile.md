@@ -222,6 +222,7 @@ run_install chezmoi_post_apply_hook
 run_install chezmoi_pre_apply_hook
 run_install generate_cargo_package_list
 run_install generate_pip_package_list
+run_install generate_pipx_package_list
 run_install git-amend-commit
 run_install git-browse
 run_install git-hash
