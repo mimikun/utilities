@@ -17,6 +17,7 @@ run_lint git-shallow-clone.sh
 run_lint install_cargo_packages.sh
 run_lint install_gh_extensions.sh
 run_lint install_pip_packages.sh
+run_lint install_pipx_packages.sh
 run_lint update_pnpm.sh
 run_lint utils/changelog.sh
 run_lint utils/clean.sh

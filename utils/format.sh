@@ -21,6 +21,7 @@ run_shfmt git-shallow-clone.sh
 run_shfmt install_cargo_packages.sh
 run_shfmt install_gh_extensions.sh
 run_shfmt install_pip_packages.sh
+run_shfmt install_pipx_packages.sh
 run_shfmt update_pnpm.sh
 
 cd utils || exit

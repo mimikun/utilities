@@ -231,6 +231,7 @@ run_install git-shallow-clone
 run_install install_cargo_packages
 run_install install_gh_extensions
 run_install install_pip_packages
+run_install install_pipx_packages
 run_install update_pnpm
 ```
 
