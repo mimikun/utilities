@@ -1,5 +1,24 @@
 # Changelog
 
+## [v2025.01.10]
+
+### Added - 新機能について
+
+なし
+
+### Changed - 既存機能の変更について
+
+- chore: add sort with generate_pkg_list scripts
+- docs(CHANGELOG): update Happy New Year! 2025!
+
+### Removed - 今回で削除された機能について
+
+なし
+
+### Fixed - 不具合修正について
+
+なし
+
 ## [v2024.09.09]
 
 ### Added - 新機能について
