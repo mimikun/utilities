@@ -1,5 +1,23 @@
 # Changelog
 
+## [v2025.01.14]
+
+### Added - 新機能について
+
+なし
+
+### Changed - 既存機能の変更について
+
+- chore(deps): update
+
+### Removed - 今回で削除された機能について
+
+- chore: remove git subcommands
+
+### Fixed - 不具合修正について
+
+なし
+
 ## [v2025.01.10]
 
 ### Added - 新機能について
