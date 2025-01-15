@@ -20,3 +20,4 @@ run_lint utils/create-patch.sh
 run_lint utils/format.sh
 run_lint utils/install.sh
 run_lint utils/lint.sh
+run_lint utils/git-clean-fetch.sh
