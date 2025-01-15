@@ -1,5 +1,23 @@
 # Changelog
 
+## [v2025.01.15]
+
+### Added - 新機能について
+
+なし
+
+### Changed - 既存機能の変更について
+
+なし
+
+### Removed - 今回で削除された機能について
+
+- chore: remove git-commands in install script
+
+### Fixed - 不具合修正について
+
+- fix(utils): git cleanfetch
+
 ## [v2025.01.14]
 
 ### Added - 新機能について
